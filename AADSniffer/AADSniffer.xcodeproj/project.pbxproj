@@ -13,9 +13,13 @@
 		E50FD7F1217F077800E4B781 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E50FD7F0217F077800E4B781 /* Assets.xcassets */; };
 		E50FD7F4217F077800E4B781 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E50FD7F2217F077800E4B781 /* LaunchScreen.storyboard */; };
 		E50FD7F7217F077800E4B781 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E50FD7F6217F077800E4B781 /* main.m */; };
+		F3AC99F53FF310A806C31797 /* libPods-AADSniffer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A204500F8D6734558ABF62A /* libPods-AADSniffer.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E5A7B2CFADE0416445E15CE /* Pods-AADSniffer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AADSniffer.release.xcconfig"; path = "Pods/Target Support Files/Pods-AADSniffer/Pods-AADSniffer.release.xcconfig"; sourceTree = "<group>"; };
+		7A204500F8D6734558ABF62A /* libPods-AADSniffer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AADSniffer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEC017044D04F26F5340C5D2 /* Pods-AADSniffer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AADSniffer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AADSniffer/Pods-AADSniffer.debug.xcconfig"; sourceTree = "<group>"; };
 		E50FD7E4217F077800E4B781 /* AADSniffer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AADSniffer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E50FD7E7217F077800E4B781 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E50FD7E8217F077800E4B781 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -33,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3AC99F53FF310A806C31797 /* libPods-AADSniffer.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		25C79C3A143730A183717AFA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7A204500F8D6734558ABF62A /* libPods-AADSniffer.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7FA81038F44857FFEFA852A5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AEC017044D04F26F5340C5D2 /* Pods-AADSniffer.debug.xcconfig */,
+				0E5A7B2CFADE0416445E15CE /* Pods-AADSniffer.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E50FD7DB217F077800E4B781 = {
 			isa = PBXGroup;
 			children = (
 				E50FD7E6217F077800E4B781 /* AADSniffer */,
 				E50FD7E5217F077800E4B781 /* Products */,
+				7FA81038F44857FFEFA852A5 /* Pods */,
+				25C79C3A143730A183717AFA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,6 +102,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E50FD7FA217F077800E4B781 /* Build configuration list for PBXNativeTarget "AADSniffer" */;
 			buildPhases = (
+				9D8D4955E7D64A3551A0B8C3 /* [CP] Check Pods Manifest.lock */,
 				E50FD7E0217F077800E4B781 /* Sources */,
 				E50FD7E1217F077800E4B781 /* Frameworks */,
 				E50FD7E2217F077800E4B781 /* Resources */,
@@ -135,6 +160,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9D8D4955E7D64A3551A0B8C3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AADSniffer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E50FD7E0217F077800E4B781 /* Sources */ = {
@@ -283,6 +329,7 @@
 		};
 		E50FD7FB217F077800E4B781 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AEC017044D04F26F5340C5D2 /* Pods-AADSniffer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
@@ -301,6 +348,7 @@
 		};
 		E50FD7FC217F077800E4B781 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E5A7B2CFADE0416445E15CE /* Pods-AADSniffer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;

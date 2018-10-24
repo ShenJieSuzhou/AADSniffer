@@ -1,0 +1,22 @@
+PODS:
+  - OpenCV (3.2.0):
+    - OpenCV/Dynamic (= 3.2.0)
+  - OpenCV/Dynamic (3.2.0)
+  - TesseractOCRiOS (4.0.0)
+
+DEPENDENCIES:
+  - OpenCV (~> 3.2.0)
+  - TesseractOCRiOS (~> 4.0.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - OpenCV
+    - TesseractOCRiOS
+
+SPEC CHECKSUMS:
+  OpenCV: 0f7ab403d1e81769bc6f4f524c3c6928ecb1fdb8
+  TesseractOCRiOS: 90638afbe43d082433f2e76b384c7901d23956df
+
+PODFILE CHECKSUM: b8e4299a57157c96385df09a6367e1ae9d76d460
+
+COCOAPODS: 1.5.3

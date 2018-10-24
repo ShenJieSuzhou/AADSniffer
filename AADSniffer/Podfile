@@ -1,0 +1,4 @@
+target 'AADSniffer' do
+	pod 'OpenCV', '~> 3.2.0'
+	pod 'TesseractOCRiOS', '~> 4.0.0'
+end
