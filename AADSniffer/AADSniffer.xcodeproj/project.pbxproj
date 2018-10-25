@@ -16,6 +16,14 @@
 		E524364E218010E20008FDDD /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E524364D218010E20008FDDD /* CoreImage.framework */; };
 		E5243650218010ED0008FDDD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E524364F218010ED0008FDDD /* CoreGraphics.framework */; };
 		E5243652218011170008FDDD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5243651218011170008FDDD /* Foundation.framework */; };
+		E524366B2180187B0008FDDD /* AlphaMaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E52436552180187B0008FDDD /* AlphaMaskViewController.m */; };
+		E524366C2180187B0008FDDD /* UIImage+SGHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E52436592180187B0008FDDD /* UIImage+SGHelper.m */; };
+		E524366D2180187B0008FDDD /* SGQRCodeScanningVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E524365C2180187B0008FDDD /* SGQRCodeScanningVC.m */; };
+		E524366E2180187B0008FDDD /* SGQRCodeScanningView.m in Sources */ = {isa = PBXBuildFile; fileRef = E524365F2180187B0008FDDD /* SGQRCodeScanningView.m */; };
+		E524366F2180187B0008FDDD /* SGWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = E52436612180187B0008FDDD /* SGWebView.m */; };
+		E52436702180187B0008FDDD /* SGQRCodeConst.m in Sources */ = {isa = PBXBuildFile; fileRef = E52436642180187B0008FDDD /* SGQRCodeConst.m */; };
+		E52436712180187B0008FDDD /* SGQRCodeTool.m in Sources */ = {isa = PBXBuildFile; fileRef = E52436682180187B0008FDDD /* SGQRCodeTool.m */; };
+		E52436722180187B0008FDDD /* SnailQRCode.m in Sources */ = {isa = PBXBuildFile; fileRef = E524366A2180187B0008FDDD /* SnailQRCode.m */; };
 		F3AC99F53FF310A806C31797 /* libPods-AADSniffer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A204500F8D6734558ABF62A /* libPods-AADSniffer.a */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +44,23 @@
 		E524364D218010E20008FDDD /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		E524364F218010ED0008FDDD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		E5243651218011170008FDDD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E52436542180187B0008FDDD /* AlphaMaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlphaMaskViewController.h; sourceTree = "<group>"; };
+		E52436552180187B0008FDDD /* AlphaMaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlphaMaskViewController.m; sourceTree = "<group>"; };
+		E52436582180187B0008FDDD /* UIImage+SGHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+SGHelper.h"; sourceTree = "<group>"; };
+		E52436592180187B0008FDDD /* UIImage+SGHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SGHelper.m"; sourceTree = "<group>"; };
+		E524365B2180187B0008FDDD /* SGQRCodeScanningVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGQRCodeScanningVC.h; sourceTree = "<group>"; };
+		E524365C2180187B0008FDDD /* SGQRCodeScanningVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGQRCodeScanningVC.m; sourceTree = "<group>"; };
+		E524365E2180187B0008FDDD /* SGQRCodeScanningView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGQRCodeScanningView.h; sourceTree = "<group>"; };
+		E524365F2180187B0008FDDD /* SGQRCodeScanningView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGQRCodeScanningView.m; sourceTree = "<group>"; };
+		E52436602180187B0008FDDD /* SGWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGWebView.h; sourceTree = "<group>"; };
+		E52436612180187B0008FDDD /* SGWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGWebView.m; sourceTree = "<group>"; };
+		E52436632180187B0008FDDD /* SGQRCodeConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGQRCodeConst.h; sourceTree = "<group>"; };
+		E52436642180187B0008FDDD /* SGQRCodeConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGQRCodeConst.m; sourceTree = "<group>"; };
+		E52436652180187B0008FDDD /* SGQRCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGQRCode.h; sourceTree = "<group>"; };
+		E52436672180187B0008FDDD /* SGQRCodeTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGQRCodeTool.h; sourceTree = "<group>"; };
+		E52436682180187B0008FDDD /* SGQRCodeTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGQRCodeTool.m; sourceTree = "<group>"; };
+		E52436692180187B0008FDDD /* SnailQRCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnailQRCode.h; sourceTree = "<group>"; };
+		E524366A2180187B0008FDDD /* SnailQRCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SnailQRCode.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +119,7 @@
 		E50FD7E6217F077800E4B781 /* AADSniffer */ = {
 			isa = PBXGroup;
 			children = (
+				E52436532180187B0008FDDD /* QRCode */,
 				E50FD7E7217F077800E4B781 /* AppDelegate.h */,
 				E50FD7E8217F077800E4B781 /* AppDelegate.m */,
 				E50FD7EA217F077800E4B781 /* ViewController.h */,
@@ -105,6 +131,78 @@
 				E50FD7F6217F077800E4B781 /* main.m */,
 			);
 			path = AADSniffer;
+			sourceTree = "<group>";
+		};
+		E52436532180187B0008FDDD /* QRCode */ = {
+			isa = PBXGroup;
+			children = (
+				E52436542180187B0008FDDD /* AlphaMaskViewController.h */,
+				E52436552180187B0008FDDD /* AlphaMaskViewController.m */,
+				E52436562180187B0008FDDD /* SGQRCode */,
+				E52436692180187B0008FDDD /* SnailQRCode.h */,
+				E524366A2180187B0008FDDD /* SnailQRCode.m */,
+			);
+			path = QRCode;
+			sourceTree = "<group>";
+		};
+		E52436562180187B0008FDDD /* SGQRCode */ = {
+			isa = PBXGroup;
+			children = (
+				E52436572180187B0008FDDD /* Category */,
+				E524365A2180187B0008FDDD /* Controller */,
+				E524365D2180187B0008FDDD /* CustomControls */,
+				E52436622180187B0008FDDD /* Helper */,
+				E52436652180187B0008FDDD /* SGQRCode.h */,
+				E52436662180187B0008FDDD /* Tools */,
+			);
+			path = SGQRCode;
+			sourceTree = "<group>";
+		};
+		E52436572180187B0008FDDD /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				E52436582180187B0008FDDD /* UIImage+SGHelper.h */,
+				E52436592180187B0008FDDD /* UIImage+SGHelper.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		E524365A2180187B0008FDDD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E524365B2180187B0008FDDD /* SGQRCodeScanningVC.h */,
+				E524365C2180187B0008FDDD /* SGQRCodeScanningVC.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E524365D2180187B0008FDDD /* CustomControls */ = {
+			isa = PBXGroup;
+			children = (
+				E524365E2180187B0008FDDD /* SGQRCodeScanningView.h */,
+				E524365F2180187B0008FDDD /* SGQRCodeScanningView.m */,
+				E52436602180187B0008FDDD /* SGWebView.h */,
+				E52436612180187B0008FDDD /* SGWebView.m */,
+			);
+			path = CustomControls;
+			sourceTree = "<group>";
+		};
+		E52436622180187B0008FDDD /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				E52436632180187B0008FDDD /* SGQRCodeConst.h */,
+				E52436642180187B0008FDDD /* SGQRCodeConst.m */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		E52436662180187B0008FDDD /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				E52436672180187B0008FDDD /* SGQRCodeTool.h */,
+				E52436682180187B0008FDDD /* SGQRCodeTool.m */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,8 +298,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				E50FD7EC217F077800E4B781 /* ViewController.m in Sources */,
+				E52436712180187B0008FDDD /* SGQRCodeTool.m in Sources */,
+				E52436722180187B0008FDDD /* SnailQRCode.m in Sources */,
+				E524366F2180187B0008FDDD /* SGWebView.m in Sources */,
+				E524366E2180187B0008FDDD /* SGQRCodeScanningView.m in Sources */,
+				E524366B2180187B0008FDDD /* AlphaMaskViewController.m in Sources */,
+				E52436702180187B0008FDDD /* SGQRCodeConst.m in Sources */,
 				E50FD7F7217F077800E4B781 /* main.m in Sources */,
 				E50FD7E9217F077800E4B781 /* AppDelegate.m in Sources */,
+				E524366C2180187B0008FDDD /* UIImage+SGHelper.m in Sources */,
+				E524366D2180187B0008FDDD /* SGQRCodeScanningVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,7 +454,7 @@
 				DEVELOPMENT_TEAM = WSSN499SLU;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = AADSniffer/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -369,7 +475,7 @@
 				DEVELOPMENT_TEAM = WSSN499SLU;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = AADSniffer/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
